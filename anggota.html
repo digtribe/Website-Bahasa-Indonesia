@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anggota Kelompok 10 - Kelompok 10</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animation */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Sticky footer */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center gap-4">
+      <img src="unib.png" alt="Logo ITB" class="h-10" />
+      <p class="font-bold text-blue-800">UNIVERSITAS BENGKULU</p>
+    </div>
+    <nav>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="flex items-center gap-2"><span>📘</span> Pendahuluan</a></li>
+        <li><a href="ciri.html" class="flex items-center gap-2"><span>📖</span> Ciri-Ciri</a></li>
+        <li><a href="jenis.html" class="flex items-center gap-2"><span>🎉</span> Jenis</a></li>
+        <li><a href="unsur.html" class="flex items-center gap-2"><span>📝</span> Unsur</a></li>
+        <li><a href="anggota.html" class="text-blue-700 border-b-2 border-blue-700 pb-1 flex items-center gap-2"><span>📂</span> Anggota Kelompok</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Anggota Section -->
+    <section id="anggota" class="py-20 px-6 bg-gradient-to-b from-blue-100 to-white fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">ANGGOTA KELOMPOK 10</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Anggota 1 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl text-center">
+            <img src="farhan hazard.jpg" alt="Anggota 1" class="w-32 h-32 mx-auto rounded-full mb-4" />
+            <h3 class="text-xl font-bold text-gray-800">Farhan Khairullah</h3>
+            <p class="text-gray-600">NPM: G1A024043</p>
+            <p class="text-gray-600">Prodi: Informatika</p>
+          </div>
+
+          <!-- Anggota 2 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl text-center">
+            <img src="nathan hazard.jpg" alt="Anggota 2" class="w-32 h-32 mx-auto rounded-full mb-4" />
+            <h3 class="text-xl font-bold text-gray-800">Muhammad Nathan Algibran</h3>
+            <p class="text-gray-600">NPM: G1A024057</p>
+            <p class="text-gray-600">Prodi: Informatika</p>
+          </div>
+
+          <!-- Anggota 3 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl text-center">
+            <img src="hazard abel.jpg" alt="Anggota 3" class="w-32 h-32 mx-auto rounded-full mb-4" />
+            <h3 class="text-xl font-bold text-gray-800">M. Abel Cakrawangsa</h3>
+            <p class="text-gray-600">NPM: G1A024077</p>
+            <p class="text-gray-600">Prodi: Informatika</p>
+          </div>
+
+          <!-- Anggota 4 -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl text-center">
+            <img src="amek hazard.jpg" alt="Anggota 4" class="w-32 h-32 mx-auto rounded-full mb-4" />
+            <h3 class="text-xl font-bold text-gray-800">Achmad Rifky Akbar</h3>
+            <p class="text-gray-600">NPM: G1A024091</p>
+            <p class="text-gray-600">Prodi: Informatika</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 Universitas Bengkulu. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

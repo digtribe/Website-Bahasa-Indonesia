@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelompok 10</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
+
+    .submenu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .submenu.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .active-link {
+      border-bottom-width: 2px;
+      border-color: #1d4ed8;
+      color: #1d4ed8;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center gap-4">
+      <img src="unib.png" alt="Logo ITB" class="h-10" />
+      <p class="font-bold text-blue-800">UNIVERSITAS BENGKULU</p>
+    </div>
+    <nav>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li class="relative">
+          <a href="#pendahuluan" class="flex items-center gap-2 toggle-submenu active-link">
+            <span>📘</span> Pendahuluan
+            <span class="arrow transition-transform duration-300">▼</span>
+          </a>
+          <ul class="absolute submenu flex-col bg-white text-gray-800 shadow-lg rounded mt-2 min-w-[200px]">
+            <li><a href="tujuan.html" class="block px-4 py-2 hover:bg-blue-100">Tujuan</a></li>
+            <li><a href="pendapat-ahli.html" class="block px-4 py-2 hover:bg-blue-100">Pendapat Ahli</a></li>
+            <li><a href="sistematika.html" class="block px-4 py-2 hover:bg-blue-100">Sistematika Penulisan</a></li>
+          </ul>
+        </li>
+        <li><a href="ciri.html" class="flex items-center gap-2"><span>📖</span> Ciri-Ciri</a></li>
+        <li><a href="#unsur" class="flex items-center gap-2"><span>📝</span> Unsur</a></li>
+        <li><a href="#jenis" class="flex items-center gap-2"><span>🎉</span> Jenis</a></li>
+        <li><a href="#anggota" class="flex items-center gap-2"><span>📂</span> Anggota Kelompok</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Pendahuluan Section -->
+  <section id="pendahuluan" class="py-20 px-6 bg-gradient-to-b from-blue-100 to-white fade-in">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">PENDAHULUAN</h2>
+      <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl">
+        <p class="mb-6 text-lg text-gray-700">
+          <strong>Karya Tulis Ilmiah (KTI)</strong> adalah sebuah tulisan yang memaparkan hasil penelitian, kajian, atau pemikiran ilmiah secara sistematis berdasarkan metodologi ilmiah yang valid. 
+          KTI bertujuan untuk mengkomunikasikan temuan atau ide baru dalam bidang keilmuan tertentu kepada masyarakat ilmiah atau publik yang lebih luas. Penulisan KTI harus mengikuti kaidah-kaidah akademik yang jelas, 
+          menggunakan bahasa yang baku dan formal, serta mengacu pada data dan fakta yang dapat dipertanggungjawabkan.
+        </p>
+
+        <p class="mb-6 text-lg text-gray-700">
+          KTI dapat berupa berbagai bentuk tulisan, seperti makalah, artikel ilmiah, skripsi, tesis, disertasi, atau laporan penelitian yang mengandung analisis mendalam mengenai suatu topik, dengan referensi yang valid dan relevan. 
+          Karya ini menjadi salah satu cara untuk mengembangkan ilmu pengetahuan dan teknologi, serta berfungsi sebagai kontribusi terhadap perkembangan disiplin ilmu yang sedang dikaji.
+        </p>
+
+        <p class="mb-6 text-lg text-gray-700">
+          Dalam penulisannya, KTI harus memenuhi beberapa prinsip utama, seperti objektivitas, sistematis, dan logis. Objektivitas berarti bahwa KTI harus didasarkan pada fakta dan data yang dapat diverifikasi, 
+          bukan pada opini pribadi penulis. Sistematis mengacu pada struktur penulisan yang terorganisir, mulai dari pendahuluan, tinjauan pustaka, metodologi, hasil penelitian, hingga kesimpulan. 
+          Sementara itu, logis berarti bahwa argumen dan analisis yang disajikan dalam KTI harus masuk akal dan didukung oleh bukti yang kuat.
+        </p>
+
+        <p class="mb-6 text-lg text-gray-700">
+          Selain itu, KTI juga berfungsi sebagai media komunikasi ilmiah yang memungkinkan para peneliti untuk berbagi temuan mereka dengan komunitas ilmiah lainnya. 
+          Dengan demikian, KTI tidak hanya berperan dalam pengembangan ilmu pengetahuan, tetapi juga dalam penyelesaian masalah-masalah praktis yang dihadapi masyarakat. 
+          Oleh karena itu, penulisan KTI memerlukan ketelitian, kejujuran, dan integritas akademik yang tinggi.
+        </p>
+
+        <p class="mb-6 text-lg text-gray-700">
+          Dalam konteks pendidikan, KTI sering digunakan sebagai salah satu syarat kelulusan bagi mahasiswa, baik pada tingkat sarjana, magister, maupun doktor. 
+          Penulisan KTI membantu mahasiswa untuk mengembangkan kemampuan berpikir kritis, analitis, dan kreatif, serta meningkatkan keterampilan mereka dalam menyusun argumen yang logis dan sistematis. 
+          Dengan demikian, KTI tidak hanya menjadi produk akhir dari proses pembelajaran, tetapi juga menjadi alat untuk mengukur kompetensi akademik mahasiswa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder Sections for Smooth Scroll -->
+  <section id="ciri" class="py-20 px-6"></section>
+  <section id="unsur" class="py-20 px-6"></section>
+  <section id="jenis" class="py-20 px-6"></section>
+
+  <!-- Footer -->
+  <footer id="anggota" class="bg-blue-800 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 Universitas Bengkulu. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('nav a');
+      const toggleLinks = document.querySelectorAll('.toggle-submenu');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.forEach(l => l.classList.remove('active-link'));
+          link.classList.add('active-link');
+        });
+      });
+
+      toggleLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const submenu = link.nextElementSibling;
+          const arrow = link.querySelector('.arrow');
+
+          document.querySelectorAll('.submenu').forEach(menu => {
+            if (menu !== submenu) menu.classList.remove('show');
+          });
+          document.querySelectorAll('.arrow').forEach(a => {
+            if (a !== arrow) a.classList.remove('rotate-180');
+          });
+
+          submenu.classList.toggle('show');
+          arrow.classList.toggle('rotate-180');
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        const isInside = e.target.closest('.toggle-submenu') || e.target.closest('.submenu');
+        if (!isInside) {
+          document.querySelectorAll('.submenu').forEach(menu => menu.classList.remove('show'));
+          document.querySelectorAll('.arrow').forEach(arrow => arrow.classList.remove('rotate-180'));
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tujuan - Kelompok 10</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animation */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Ensure footer stays at the bottom */
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center gap-4">
+      <img src="unib.png" alt="Logo ITB" class="h-10" />
+      <p class="font-bold text-blue-800">UNIVERSITAS BENGKULU</p>
+    </div>
+    <nav>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="flex items-center gap-2"><span>📘</span> Pendahuluan</a></li>
+        <li><a href="tujuan.html" class="text-blue-700 border-b-2 border-blue-700 pb-1 flex items-center gap-2"><span>🎯</span> Tujuan</a></li>
+        <li><a href="pendapat-ahli.html" class="flex items-center gap-2"><span>📖</span> Pendapat Ahli</a></li>
+        <li><a href="sistematika.html" class="flex items-center gap-2"><span>📝</span> Sistematika</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="tujuan" class="py-20 px-6 bg-gradient-to-b from-blue-100 to-white fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">TUJUAN</h2>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl">
+          <p class="mb-6 text-lg text-gray-700">
+            Halaman ini menjelaskan tujuan dari Karya Tulis Ilmiah (KTI). Tujuan utama dari KTI adalah untuk menyampaikan hasil penelitian, ide, atau gagasan baru yang dapat memberikan kontribusi terhadap pengembangan ilmu pengetahuan dan teknologi.
+          </p>
+
+          <p class="mb-6 text-lg text-gray-700">
+            Selain itu, KTI bertujuan untuk:
+          </p>
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Meningkatkan pemahaman masyarakat terhadap suatu topik tertentu.</li>
+            <li>Menyediakan referensi ilmiah yang dapat digunakan oleh peneliti lain.</li>
+            <li>Mendorong inovasi dan pengembangan dalam bidang keilmuan tertentu.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 Universitas Bengkulu. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

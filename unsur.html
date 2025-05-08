@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unsur KTI - Kelompok 10</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animation */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Sticky footer */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center gap-4">
+      <img src="unib.png" alt="Logo ITB" class="h-10" />
+      <p class="font-bold text-blue-800">UNIVERSITAS BENGKULU</p>
+    </div>
+    <nav>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="flex items-center gap-2"><span>📘</span> Pendahuluan</a></li>
+        <li><a href="ciri.html" class="flex items-center gap-2"><span>📖</span> Ciri-Ciri</a></li>
+        <li><a href="jenis.html" class="flex items-center gap-2"><span>🎉</span> Jenis</a></li>
+        <li><a href="unsur.html" class="text-blue-700 border-b-2 border-blue-700 pb-1 flex items-center gap-2"><span>📝</span> Unsur</a></li>
+        <li><a href="anggota.html" class="flex items-center gap-2"><span>📂</span> Anggota Kelompok</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Unsur Section -->
+    <section id="unsur" class="py-20 px-6 bg-gradient-to-b from-blue-100 to-white fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">UNSUR KARYA TULIS ILMIAH</h2>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl">
+          <p class="mb-6 text-lg text-gray-700">
+            Karya Tulis Ilmiah (KTI) memiliki beberapa unsur penting yang harus dipenuhi agar dapat dianggap sebagai karya ilmiah yang valid. Berikut adalah unsur-unsur utama KTI:
+          </p>
+
+          <ul class="list-disc list-inside text-gray-700 space-y-4">
+            <li>
+              <strong>Judul:</strong> Menyampaikan topik utama dari karya tulis secara ringkas dan jelas.
+            </li>
+            <li>
+              <strong>Abstrak:</strong> Ringkasan singkat yang mencakup tujuan, metode, hasil, dan kesimpulan dari penelitian.
+            </li>
+            <li>
+              <strong>Pendahuluan:</strong> Menjelaskan latar belakang, tujuan, dan rumusan masalah yang akan dibahas.
+            </li>
+            <li>
+              <strong>Tinjauan Pustaka:</strong> Ulasan literatur yang relevan untuk mendukung penelitian.
+            </li>
+            <li>
+              <strong>Metodologi:</strong> Penjelasan tentang metode yang digunakan dalam penelitian.
+            </li>
+            <li>
+              <strong>Hasil dan Pembahasan:</strong> Penyajian hasil penelitian dan analisisnya.
+            </li>
+            <li>
+              <strong>Kesimpulan:</strong> Ringkasan dari temuan utama dan rekomendasi.
+            </li>
+            <li>
+              <strong>Daftar Pustaka:</strong> Referensi yang digunakan dalam penulisan karya tulis.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 Universitas Bengkulu. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

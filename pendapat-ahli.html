@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendapat Ahli - Kelompok 10</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom animation */
+    .fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Sticky footer */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 to-white text-gray-800">
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-4 shadow-md bg-white sticky top-0 z-50">
+    <div class="flex items-center gap-4">
+      <img src="unib.png" alt="Logo ITB" class="h-10" />
+      <p class="font-bold text-blue-800">UNIVERSITAS BENGKULU</p>
+    </div>
+    <nav>
+      <ul class="flex gap-6 text-sm font-medium">
+        <li><a href="index.html" class="flex items-center gap-2"><span>📘</span> Pendahuluan</a></li>
+        <li><a href="tujuan.html" class="flex items-center gap-2"><span>🎯</span> Tujuan</a></li>
+        <li><a href="pendapat-ahli.html" class="text-blue-700 border-b-2 border-blue-700 pb-1 flex items-center gap-2"><span>📖</span> Pendapat Ahli</a></li>
+        <li><a href="sistematika.html" class="flex items-center gap-2"><span>📝</span> Sistematika</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Pendapat Ahli Section -->
+    <section id="pendapat-ahli" class="py-20 px-6 bg-gradient-to-b from-blue-100 to-white fade-in">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">PENDAPAT AHLI</h2>
+
+        <div class="bg-white p-6 rounded-2xl shadow-lg transition hover:shadow-xl">
+          <p class="mb-6 text-lg text-gray-700">
+            Dalam dunia akademik, pendapat ahli sangat penting untuk memberikan landasan teori yang kuat dalam sebuah karya tulis ilmiah. Berikut adalah beberapa pendapat ahli terkait Karya Tulis Ilmiah (KTI):
+          </p>
+
+          <ul class="list-disc list-inside text-gray-700 space-y-4">
+            <li>
+              <strong>Dr. John Doe:</strong> "Karya Tulis Ilmiah adalah sarana untuk menyampaikan hasil penelitian yang dapat dipertanggungjawabkan secara akademik dan memberikan kontribusi nyata terhadap perkembangan ilmu pengetahuan."
+            </li>
+            <li>
+              <strong>Prof. Jane Smith:</strong> "Penulisan ilmiah harus mengikuti kaidah yang sistematis dan logis, serta didukung oleh data yang valid dan relevan."
+            </li>
+            <li>
+              <strong>Dr. Ahmad Fauzi:</strong> "Karya Tulis Ilmiah tidak hanya menjadi media komunikasi ilmiah, tetapi juga menjadi alat untuk mengembangkan kemampuan berpikir kritis dan analitis."
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 Universitas Bengkulu. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
